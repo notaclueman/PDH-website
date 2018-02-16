@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 html {
-    background: #222 url('../images/wallpaper-black.jpg') no-repeat;
+    background: #222 url('../images/carbon-fiber.jpg') no-repeat;
     width: 100%;
     height: 100%;
-    background-position: fixed;
+    background-attachment: fixed;
     overflow-y: scroll; 
 
 }
@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-bottom: 1rem;
+}
+
+.bg-light {
+    background-color: #6d7d8e;
 }
 
 .navbar-brand, .navbar-nav>li>a {
@@ -51,3 +55,30 @@ p {
     }
 }
 
+.container .jumbotron, container-fluid .jumbotron {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jumbotron {
+    background: none;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.jumbotron h1 {
+    font-size: 130px;
+}
+
+.jumbotron .lead {
+    font-size: 32px;
+}
+
+@media (max-width: 992px) {
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+    .jumbotron .lead {
+        font-size: 20px;
+    }
+}
